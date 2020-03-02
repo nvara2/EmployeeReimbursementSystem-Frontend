@@ -1,0 +1,51 @@
+<div class="topnav">
+    <h1>Expense Reimbursement</h1>
+
+    <button class="mybutton7" mat-flat-button style="float: right;" (click)="loggingOut()">LogOut</button>
+</div>
+
+<form>
+    <div class="topbutton">
+
+
+
+        <button class="mybutton1" *ngIf="isManager" (click)="viewAllTickets()">View All Tickets</button>
+        <button class="mybutton2" (click)="createNewRecord()">Create New Request</button>
+
+    </div>
+    <p style="text-align: left; color: rgb(0, 56, 130); font-size: xx-large; font-style: strong; ">Welcome {{username}}!</p>
+
+    <div>
+        <table class="table" BORDER="5" WIDTH="95%" CELLPADDING="4" CELLSPACING="3">
+            <thead>
+                <tr>
+                    <th>Ticket ID</th>
+                    <th>Amount</th>
+                    <th>Submit Date</th>
+                    <th>Resolved Date</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Type</th>
+
+                </tr>
+            </thead>
+
+            <tbody *ngFor="let record of records">
+                <tr ALIGN="CENTER">
+
+                    <td>{{record.ticketid}}</td>
+                    <td>{{record.amount}}</td>
+                    <td>{{record.datesubmitted | date: 'yyyy-MM-dd'}}</td>
+                    <td>{{record.dateresolved | date: 'yyyy-MM-dd'}}</td>
+                    <td>{{record.description}}</td>
+                    <td>{{record.statusid | statusName}}</td>
+                    <td>{{record.typeid | actionType}}</td>
+
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</form>

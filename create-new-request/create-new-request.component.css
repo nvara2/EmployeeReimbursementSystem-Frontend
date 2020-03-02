@@ -1,0 +1,62 @@
+.topnav {
+    background-color: #32cd92;
+    overflow: hidden;
+   
+
+  }
+  #request {
+    background: #cdbe32;
+    width: 100vw;
+    height: 50vh;
+    text-align: left;
+}
+
+h1 {
+    padding-top: 30px;
+    margin: 0;
+    font-family: monospace;
+    text-underline-position: below;
+    
+} 
+.mybutton5 {
+    background-color: rgb(19, 180, 126); 
+    border: none;
+    color: white;
+    padding: 1px 1px 3px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .mybutton6 {
+    background-color: rgb(202, 137, 15); 
+    border: none;
+    color: white;
+    padding: 1px 1px 3px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .mybutton7 {
+    background-color: rgb(202, 137, 15); 
+    border: none;
+    color: white;
+    padding: 1px 1px 3px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .divider2{
+    width:5px;
+    height:auto;
+    display:inline-block;
+  }
+
+  .requestform{
+    background: #32cd8c;
+    width: 100vw;
+    height: 20vh;
+    text-align: left;
+  }

@@ -1,0 +1,20 @@
+<section>
+    <section id="login">
+
+        <h1>Expense Reimbursement System</h1>
+
+        <form>
+
+            <input [(ngModel)]="inputUsername" name="Username" type="username" autocomplete="off" placeholder="Username">
+            <input [(ngModel)]="inputPassword" name="password" type="password" placeholder="Password">
+            <br>
+            <button [disabled]="!(inputUsername && inputPassword)" (click)="submit()">Login</button>
+
+            <div *ngIf="invalidInput">
+                Invalid credentials.
+            </div>
+        </form>
+    </section>
+    <section id="bottom"> </section>
+
+</section>

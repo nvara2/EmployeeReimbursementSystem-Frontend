@@ -1,0 +1,63 @@
+.topnav {
+    background-color: #32cd92;
+    overflow: hidden;
+   
+
+  }
+  
+  h1{
+    color: rgb(11, 1, 27)
+
+  }
+  .mybutton3 {
+    background-color: rgb(57, 180, 19); 
+    border: none;
+    color: white;
+    padding: 1px 1px 3px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .mybutton4 {
+    background-color: rgb(202, 15, 15); 
+    border: none;
+    color: white;
+    padding: 1px 1px 3px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
+
+.mybutton6 {
+  background-color: rgb(202, 137, 15); 
+  border: none;
+  color: white;
+  padding: 1px 1px 3px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.divider2{
+  width:5px;
+  height:auto;
+  display:inline-block;
+}
+.mybutton7 {
+  background-color: rgb(202, 137, 15); 
+  border: none;
+  color: white;
+  padding: 1px 1px 3px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

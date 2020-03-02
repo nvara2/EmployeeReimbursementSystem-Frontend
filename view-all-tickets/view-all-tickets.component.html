@@ -1,0 +1,44 @@
+<div class="topnav">
+        <h1>Employee Records</h1>
+        <button class="mybutton6" mat-flat-button style="float: right;" (click)="returnHome()">Home</button>
+        <div class="divider2"></div>
+        <button class="mybutton7" mat-flat-button style="float: right;" (click)="loggingOut()">LogOut</button>
+        </div>
+        
+<div>
+  
+        <table class="table" BORDER="5"    WIDTH="95%"   CELLPADDING="4" CELLSPACING="3">
+          <thead>
+            <tr>
+                <th>Ticket ID</th>
+                <th>Employee</th>
+                <th>Amount</th>
+                <th>Submit Date</th>
+                <th>Resolved Date</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Type</th>
+                <th>Action</th>
+              </tr>
+          </thead>
+
+              <tbody *ngFor="let record of records" >
+                <tr ALIGN="CENTER" >
+
+                    <td>{{record.ticketid}}</td>
+                    <td>{{record.author}}</td>
+                    <td>{{record.amount}}</td>
+                    <td>{{record.datesubmitted | date: 'yyyy-MM-dd'}}</td>
+                    <td>{{record.dateresolved | date: 'yyyy-MM-dd'}}</td>
+                    <td>{{record.description}}</td>
+                    <td><div ng-if='record.statusid === 1'>{{Pending}}</div>{{record.statusid | statusName}}</td>
+                    <td>{{record.typeid | actionType }}</td>
+                    <td *ngIf='record.statusid===1 && record.author!==authorname' >
+                        <button class="mybutton3" mat-flat-button  (click)="approveRequest(record)">Approve</button>
+                        <div class="divider"></div>
+                        <button class="mybutton4" mat-flat-button (click)="denyRequest(record)">Deny</button>
+                    </td>
+                  </tr>
+            </tbody>
+         </table>
+       </div>
